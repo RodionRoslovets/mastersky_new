@@ -1,0 +1,10 @@
+@import './mixins.scss';
+@import './index.scss';
+@import "../library/logo/logo.scss";
+@import "../library/button/button.scss";
+
+body{
+    @include borderedBox;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,19 @@
+mixin navMenu(menuArr)
+	.menu
+		ul.main-menu
+			each menuItem in menuArr
+				if (menuItem.sub)
+					li.main-menu__item
+						a(href="#") #{menuItem.name}
+						.sub-menu
+							.sub-menu__inner.row
+								each subElem in menuItem.sub
+									.sub-menu__item.col-lg-2.col-md-2.col-sm-4 
+											a(href=subElem.href) #{subElem.name}
+											ul.tech-name
+												each brand in subElem.brands
+													li.tech-name__brand
+														a(href=brand.href) #{brand.name}
+				else
+					li.main-menu__item
+						a(href=menuItem.href) #{menuItem.name}
