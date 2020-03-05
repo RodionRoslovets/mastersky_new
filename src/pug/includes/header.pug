@@ -1,7 +1,9 @@
 block variables
 include ./data.pug
+
 include ../../library/elements/logo/logo.pug
 include ../../library/elements/button/button.pug
+
 include ../../library/blocks/nav/navMenu.pug
 
 doctype html
@@ -31,4 +33,4 @@ html(lang='ru')
 					.call-button
 						+button('Заказать звонок', 'bordered-button')
 		nav
-			//- +navMenu(aaa)
+			+navMenu(menu)
