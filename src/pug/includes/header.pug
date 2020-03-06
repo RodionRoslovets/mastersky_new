@@ -18,7 +18,8 @@ html(lang='ru')
 		header.container-fluid
 			.row
 				.col-6.col-md-2
-					+logo('./assets/img/logo.png', 'logo')
+					.logo
+						+logo('./assets/img/logo.png', 'logo')
 				.col-md-2
 					.phone-num
 						i.fas.fa-phone-alt
@@ -31,6 +32,6 @@ html(lang='ru')
 						p Пн-Вс с 9:00 до 19:00
 				.col-md-3
 					.call-button
-						+button('Заказать звонок', 'bordered-button')
+						+button('Заказать звонок', 'button_bordered button_blue button_animated')
 		nav
 			+navMenu(menu)

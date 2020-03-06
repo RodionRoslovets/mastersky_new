@@ -1,3 +1,35 @@
+$button-shadow: 0px 4px 9.5px 0.5px rgba(41, 32, 29, 0.5);
+$blue:#0744f5;
+
 .button{
     width: 100%;
+    background:transparent;
+    border:none;
+    text-align: center;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+    /*Blue background*/
+    &_blue{
+        background:$blue;
+    }
+    /*bordered button*/
+    &_bordered{
+        border-radius: 20px;
+    }
+    /*button shadow and animation*/
+    &_animated{
+        box-shadow: $button-shadow;
+        position: relative;
+        top:0;
+        @include transition;
+        &:active{
+            top:3px;
+            box-shadow: 0px 1px 5.5px 0.5px rgba(41, 32, 29, 0.5);
+        }
+    }
+    /*advanced*/
+    padding: 23px 0px;
+    color:#fff;
 }

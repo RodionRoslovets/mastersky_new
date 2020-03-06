@@ -3,7 +3,7 @@ mixin navMenu(menuArr)
 		ul.main-menu
 			each menuItem in menuArr
 				if (menuItem.sub)
-					li.main-menu__item
+					li.main-menu__item.main-menu__item_with-sub
 						a(href="#") #{menuItem.name}
 						.sub-menu
 							.sub-menu__inner.row

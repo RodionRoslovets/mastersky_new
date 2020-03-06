@@ -1,10 +1,13 @@
 @import './mixins.scss';
 @import './index.scss';
+@import './header.scss';
 @import "../library/elements/logo/logo.scss";
 @import "../library/elements/button/button.scss";
+@import "../library/blocks/nav/navMenu.scss";
 
-body{
+body, p{
     @include borderedBox;
     margin: 0;
     padding: 0;
 }
+

@@ -1,0 +1,23 @@
+$header-color:#666;
+
+.phone-num{
+    height: 100%;
+    @include flex(center, center);
+    & a{
+        text-decoration: none;
+        color:$header-color;
+        font-size: 24px;
+    }
+}
+
+.address{
+    @extend .phone-num;
+    font-size: 24px;
+    text-align: center;
+    color:$header-color;
+    line-height: 30px;
+}
+
+.work-hours,.call-button, .logo{
+    @extend .address;
+}
