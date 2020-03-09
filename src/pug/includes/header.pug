@@ -1,10 +1,12 @@
 block variables
+
 include ./data.pug
 
 include ../../library/elements/logo/logo.pug
 include ../../library/elements/button/button.pug
 
 include ../../library/blocks/nav/navMenu.pug
+include ../../library/blocks/sideNav/sideNav.pug
 
 doctype html
 html(lang='ru')
@@ -14,24 +16,27 @@ html(lang='ru')
 		meta(content="width=device-width, initial-scale=1" name="viewport")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.min.css")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css")
+		link(rel="stylesheet" href="/assets/static/css/slick.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		script(src="./assets/static/Jq/slick.min.js")
 	body
 		header.container-fluid
 			.row
 				.col-6.col-md-2
 					.logo
 						+logo('./assets/img/logo.png', 'logo')
-				.col-md-2
+				.col-6.col-md-2
 					.phone-num
 						i.fas.fa-phone-alt
 						a(href="+77273440017") 8(727)344-00-17
-				.col-md-3
+				.d-none.d-md-block.col-md-3
 					.address
 						p ул. Карасай Батыра 185 (между Ауэзова и Жарокова)
-				.col-md-2
+				.d-none.d-md-block.col-md-2
 					.work-hours
 						p Пн-Вс с 9:00 до 19:00
-				.col-md-3
+				.d-none.d-md-block.col-md-3
 					.call-button
 						+button('Заказать звонок', 'button_bordered button_blue button_animated')
-		nav
+		nav.container-fluid
 			+navMenu(menu)

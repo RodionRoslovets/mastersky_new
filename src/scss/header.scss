@@ -21,3 +21,11 @@ $header-color:#666;
 .work-hours,.call-button, .logo{
     @extend .address;
 }
+/* Стили для встроеного меню шаблона */
+
+#horizontal-menu {
+    display: none;
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
+}

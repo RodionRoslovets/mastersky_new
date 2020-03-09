@@ -1,0 +1,34 @@
+block variables
+	-title = "Ремонт телевизоров"
+include ../includes/header.pug
+
+.container
+	.row
+		aside.col-md-3
+			+sideNav(menu[2].sub[0].brands, 'Телевизоры', 'телевизоров')
+		main.col-md-9
+			.main-heading
+					h1 Ремонт телевизоров в Алматы
+					p.sub-heading С честной гарантией до 12 месяцев
+			.row.advantages
+				.col-md-3.advantage.d-none.d-md-block
+					p.advantages__text
+						span Выезд телемастера
+						| по Алматы бесплатно
+						br 
+						| Всегда в наличии запчасти
+					.advantages__photo
+						img(src="https://mastersky.kz/image/catalog/master2.jpg", alt="master2")
+				.col-md-6.order-0.order-md-0.align-self-md-end
+					.advantages__photo
+						img(src="https://mastersky.kz/image/catalog/master1.jpg", alt="master1")
+				.col-md-3.advantage.d-none.d-md-block
+					p.advantages__text
+						span Бесплатная диагностика
+						| Ремонт любой сложности
+						br 
+						| На дому и в сервисе
+					.advantages__photo
+						img(src="https://mastersky.kz/image/catalog/master3.jpg", alt="master3")
+
+include ../includes/footer.pug

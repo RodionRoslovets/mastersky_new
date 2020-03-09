@@ -2,6 +2,100 @@ block variables
 	-title = "Главная"
 include ../includes/header.pug
 
+//- мастера
+.container.masters
+	h3.masters__heading Наши мастера быстро выявят неисправность!
+	.masters__description
+		img.masters__img(src="https://mastersky.kz/image/catalog/chronometer-green.png", alt="")
+		p.masters__text Благодаря самым современным методам диагностики, специалисты СЦ ICEBERG  выявят неисправность в кратчайшие сроки				 
+	.mySlide
+		each val in masters
+			img(src=val.href alt="")
+	h3.masters__heading 90% неисправностей устраняются в день обращения!
+	.masters__description
+		img.masters__img(src="https://mastersky.kz/image/catalog/right-green.png", alt="")
+		p.masters__text Так как многие неисправности являются типовыми, огромный опыт наших мастеров позволяет устранять их в день обращения	
+	h3.masters__heading Мы делаем все для Вашего удобства!
+	.masters__description
+		img.masters__img(src="https://mastersky.kz/image/catalog/express-delivery-green.png", alt="")
+		p.masters__text В нашем сервисном центре существует правило - комфорт клиента превыше всего! Поэтому мы решили что доставка неисправной техники будет для Вас бесплатной!
+			br
+			span.masters__note (*Услуга доступна только для жителей города Алматы)	
+	.masters__delivery
+		img(src="https://mastersky.kz/image/catalog/truck.png", alt="")
+		h3.masters__heading Не хотите отдавать технику в сервис?
+	.masters__description
+		img.masters__img(src="https://mastersky.kz/image/catalog/tool-button-green.png", alt="")
+		p.masters__text
+			span.masters__highlight Вызовите мастера на дом!
+			| Квалифицированый сотрудник приедет и проведет диганостику поломки, затем Вы примете решение о целесообразности ремонта!
 
+//- доставка и плюшки
+.container.delivery
+	.delivery__row
+		img(src='https://mastersky.kz/image/catalog/Picture3.png' alt="")
+	.delivery__advantages
+		.advantage
+			p.advantage__text Гаранитя на ремонт до 1 года
+		.advantage
+			p.advantage__text Полный пакет закрывающих документов для бухгалтерии
+		.advantage
+			p.advantage__text Принимаем оплату на Kaspi Gold
+			img(src="https://mastersky.kz/image/catalog/kaspi-red-min.png", alt="")
+
+//- отзывы
+.container.feedback
+	h3.feedback__heading Отзывы о нашей работе
+	p.feedback__description С 2007 года заслужили множество благодарственных писем от известных компаний города Алматы,
+		|( По вашему запросу готовы предоставить контакты для получения более точной информации о нашей работе)
+	.feedback__letters
+		each el in letters
+			.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				img(src=el.href alt="")
+
+//- контакты
+.container.contacts
+	.contacts__header
+		h3.contacts__heading Мы находимся по адресу
+		p.contacts__description ул. Карасай Батыра 185 (между Ауэзова и Жарокова)
+	.contacts__inner
+		.contacts__center.col-lg-6.col-md-6.col-sm-6.col-xs-12
+			img(src="https://mastersky.kz/image/catalog/Center.jpg", alt="")
+			p.contacts__description с 9:00 до 19:00, без перерывов и выходных
+		.contacts__map.col-lg-6.col-md-6.col-sm-6.col-xs-12
+			iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A4090c4a7507d38be26fcc8b63c752f46db44fe10d420324f3f26be62925dfa55&amp;source=constructor" width="100%" height="300" frameborder="0")
+//- написать директору
+.container-fluid
+	.container.help-us
+		.help-us__text
+			p ПОМОГИТЕ НАМ УЛУЧШИТЬ СЕРВИС!НАПИШИТЕ, ЧТО ЕЩЕ МЫ МОЖЕМ СДЕЛАТЬ ДЛЯ ВАС!
+		.help-s__button
+			+button('Написать директору лично', 'button_bordered button_blue button_animated')
+//- текст
+.container.seo-text
+	h3.seo-text__heading Сервисный центр Алматы
+	p Каждый потребитель или компания, покупая бытовую и компьютерную технику, рассчитывает на то, что она будет работать бесперебойно годы. Но, рано или поздно она выходит из строя, а значит ее следует отремонтировать, чтобы восстановить работоспособность.
+	p Куда обратиться клиенту или организации за помощью? Ведь нужно сделать ремонт бытовой техники быстро и главное, качественно. Ну и цена, чтобы была адекватной. 
+	p Всем требованиям в полной мере соответствует наш сервисный центр ICEBERG, расположенный в центре Алматы.
+	ol Почему стоит выбрать ICEBERG?
+		li Наш сервисный центр Алматы имеет репутацию надежного партнера, гарантирующего не только полноценную диагностику, но и оперативный, качественный ремонт бытовой техники.
+		li Если у Вас нет возможности доставить сломанную технику в сервис, наши курьеры сделают это за Вас. Достаточно позвонить и в течении пары часов они заберут технику на ремонт. Услуга бесплатная для всех!
+		li Для юридических лиц мы разработали специальный договор на ремонт и обслуживание бытовой техники, предоставляем скидки до 20 %, проводим ремонт техники вне очереди, даем повышенную гарантию на все виды ремонта до 1 года, осуществляем бесплатную доставку оборудования до офиса и обратно. 
+		li Что мы ремонтируем? Практически всю бытовую технику известных брендов
+		li Сервисный центр  Lg, Samsung, Sony, Bosh и другие бренды.
+		li У нас есть новейшее оборудование для диагностики и ремонта любой техники, поэтому к нам обращаются те, кто получил отказ в других мастерских, ведь они знают, что наши мастера помогут обязательно.
+		li В 90 % случаев ремонт бытовой техники производим в течении 1 дня. У нас есть свой склад оригинальных запасных частей, за счет этого ремонт проводится максимально быстро.
+		li Что касается гарантии, она составляет от 2-х месяцев и до 2-х лет. Так как у нас работают наиболее подготовленные специалисты в Алматы, проходящие обучение на заводах изготовителях техники в постоянной основе им под силу отремонтировать любую технику. 
+		li Если нужно, мастер выедет к вам, проведет диагностику и ремонт.
+	.seo-text__img
+		img(src="https://mastersky.kz/image/catalog/DSCF6190.jpg", alt="")
+	.seo-text__button
+		+button('Вызов мастера!', 'button_bordered button_blue button_animated')
+	p.seo-text__subheading А какая цена на услуги по ремонту в нашем сервисном центре?
+	p Она определяется степенью повреждения бытовой техники и стоимостью запасных частей. Но клиенты, обращающиеся к нам, отмечают, что в нашем сервисном центре самые оптимальные расценки!
+	p Сломалась бытовая техника?
+	p Не медлите, обращайтесь к нам!
+	p Отремонтируем и она снова будет, как новая!
+	p Сервисный центр Алматы Iceberg –возвращаем к жизни любую технику
 
 include ../includes/footer.pug

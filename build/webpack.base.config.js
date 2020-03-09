@@ -17,7 +17,8 @@ module.exports = {
         paths: PATHS
     },
     entry: {
-        main: PATHS.src
+        main: PATHS.src,
+        tv: `${PATHS.src}/tv.js`
     },
     output: {
         filename: `${PATHS.assets}js/[name].js`,

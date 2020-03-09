@@ -1,0 +1,7 @@
+mixin sideNav(arr, name, rodName)
+	.category-menu
+		h3.category-menu__heading #{name} 
+		ul.category-menu__list 
+			each el in arr
+				li.category-menu__list-item
+					a(href=el.href) Ремонт #{rodName} #{el.name}
