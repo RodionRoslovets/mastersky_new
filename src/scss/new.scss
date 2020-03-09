@@ -2,10 +2,12 @@
 @import './index.scss';
 @import './header.scss';
 @import './tv.scss';
+
 @import "../library/elements/logo/logo.scss";
 @import "../library/elements/button/button.scss";
 @import "../library/blocks/nav/navMenu.scss";
 @import "../library/blocks/sideNav/sideNav.scss";
+@import "../library/blocks/brandsMenu/brands.scss";
 
 body, p{
     @include borderedBox;

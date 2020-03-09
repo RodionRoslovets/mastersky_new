@@ -30,5 +30,105 @@ include ../includes/header.pug
 						| На дому и в сервисе
 					.advantages__photo
 						img(src="https://mastersky.kz/image/catalog/master3.jpg", alt="master3")
-
+			.col-md-4.offset-md-4.d-md-none.d-block
+					a(href="https://api.whatsapp.com/send?phone=77018030005&text=У меня вопрос по ремонту")
+						+button('Написать в Whatsapp', 'button_bordered button_green button_animated')
+			.brands
+				+brands(menu[2].sub[0].brands, 'телевизоров')
+			.masters
+				h3.masters__heading Наши мастера быстро выявят неисправность телевизора!
+				.masters__description
+					img.masters__img.col-md-3(src="https://mastersky.kz/image/catalog/chronometer-green.png", alt="")
+					p.masters__text Благодаря самым современным методам диагностики, специалисты СЦ ICEBERG  выявят неисправность в кратчайшие сроки				 
+				.mySlide
+					each val in masters
+						img(src=val.href alt="")
+				h3.masters__heading 90% поломок устраняются в день обращения!
+				.masters__description
+					img.masters__img(src="https://mastersky.kz/image/catalog/right-green.png", alt="")
+					p.masters__text Так как многие неисправности являются типовыми, огромный опыт наших мастеров позволяет устранять их в день обращения	
+				h3.masters__heading Мы делаем все для Вашего удобства!
+				.masters__description
+					img.masters__img(src="https://mastersky.kz/image/catalog/express-delivery-green.png", alt="")
+					p.masters__text В нашем сервисном центре существует правило - комфорт клиента превыше всего! Поэтому мы решили что доставка неисправной техники будет для Вас бесплатной!
+						br
+						span.masters__note (*Услуга доступна только для жителей города Алматы)
+				h3.masters__heading Доставка техники = 0 тенге
+				.masters__delivery
+					img(src="https://mastersky.kz/image/catalog/truck.png", alt="")
+					h3.masters__heading Не хотите отдавать технику в сервис?
+					+button('Вызовите мастера', 'button_bordered button_blue button_animated')
+				.masters__description
+					img.masters__img(src="https://mastersky.kz/image/catalog/tool-button-green.png", alt="")
+					p.masters__text Квалифицированый сотрудник приедет и проведет диганостику поломки, затем Вы примете решение о целесообразности ремонта!
+			.delivery
+				.delivery__row
+					img(src='https://mastersky.kz/image/catalog/Picture3.png' alt="")
+				.delivery__advantages
+					.advantage
+						img(src="https://mastersky.kz/image/catalog/right-green.png", alt="")
+						p.advantage__text Бесплатная диагностика Внутри сервисного центра
+					.advantage
+						img(src="https://mastersky.kz/image/catalog/right-green.png", alt="")
+						p.advantage__text Гарантия на ремонт до 12 месяцев
+					.advantage
+						img(src="https://mastersky.kz/image/catalog/right-green.png", alt="")
+						p.advantage__text Полный пакет закрывающих документов для бухгалтерии
+					.advantage
+						img(src="https://mastersky.kz/image/catalog/right-green.png", alt="")
+						p.advantage__text Принимаем оплату на Kaspi Gold
+			.price
+				h3.price__heading Диагностика внутри сервиса = 0 тенге
+				.price__table
+					.price__table-row.row
+						.price__table-cell.col-md-6 Диагностика телевизора
+						.price__table-cell.col-md-6  Диагностика материнских плат
+					.price__table-row.row
+						.price__table-cell.col-md-6  Диагностика на компонентном уровне
+						.price__table-cell.col-md-6  Диагностика проводов и разьемов
+				h3.price__heading Ремонт телевизоров от 4000 тенге
+				.price__table
+					.price__table-row.row
+						.price__table-cell.col-md-6 Ремонт телевизора
+						.price__table-cell.col-md-6 Ремонт пульта ду
+					.price__table-row.row
+						.price__table-cell.col-md-6 Ремонт на компонентном уровне
+						.price__table-cell.col-md-6 Ремонт матрицы
+			.video
+				.row
+					.col-md-6
+						iframe( width="100%" height="100%" src="https://www.youtube.com/embed/ot-BidP5cn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+					.video-description.col-md-6
+						img(src="https://mastersky.kz/image/catalog/57116.png", alt="")
+						p Больше информации в видео
+			.contacts
+				.contacts__header
+					h3.contacts__heading Мы находимся по адресу
+					p.contacts__description ул. Карасай Батыра 185 (между Ауэзова и Жарокова)
+				.contacts__inner
+					.contacts__center.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						img(src="https://mastersky.kz/image/catalog/Center.jpg", alt="")
+						p.contacts__description с 9:00 до 19:00, без перерывов и выходных
+					.contacts__map.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A4090c4a7507d38be26fcc8b63c752f46db44fe10d420324f3f26be62925dfa55&amp;source=constructor" width="100%" height="300" frameborder="0")
+.container-fluid
+	.container.help-us
+		.help-us__text
+			p ПОМОГИТЕ НАМ УЛУЧШИТЬ СЕРВИС!НАПИШИТЕ, ЧТО ЕЩЕ МЫ МОЖЕМ СДЕЛАТЬ ДЛЯ ВАС!
+		.help-s__button
+			+button('Написать директору лично', 'button_bordered button_blue button_animated')
+.container
+	.seo-text
+		p Современные телевизоры являются сложной бытовой техникой. Ушло время, когда можно было, обладая минимальными познаниями, осуществить самостоятельно ремонт. Теперь технику необходимо везти в специализированный сервисный центр, чтобы мастер смог устранить неисправность.
+		p Чаще всего в нем выходят из строя блоки управления, платы, матрица, звук, но бывают и комплексные поломки, когда приходится менять сразу несколько блоков и плат оборудования.
+		p Очень важно, чтобы телемастер Алматы был настоящим профессионалом, ведь никому не хочется ждать неделями, когда технику вернут в строй и переплачивать деньги. Ремонт телевизоров Алматы лучше всего произвести в нашем специализированном сервисе.
+		p Первое, что делает мастер, проводит полную диагностику устройства, только так можно определить неисправность. Когда она установлена, производится замена сгоревшей платы или блока. Если возникла необходимость, вы можете вызвать инженера домой. Мы оказываем и такую услугу – ремонт телевизоров в Алматы на дому. Если неисправность небольшая, он все наладит..
+		.seo-text__img
+			img(src="https://mastersky.kz/image/catalog/ibUwS-VcprI.jpg", alt="")
+		.seo-text__button
+			+button('Вызов мастера!', 'button_bordered button_blue button_animated')
+		p Привозите к нам телевизор любой марки
+		p диагностика бесплатная
+		p ремонт доступен всем, и с ним мы не затягиваем.
+		p Даем гарантию на свою работу.
 include ../includes/footer.pug

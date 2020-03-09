@@ -1,0 +1,12 @@
+mixin brands(arr, rodName)
+	.row
+		h3.col-12.brands__heading Мы работаем со всеми брендами #{rodName}
+		each el in arr
+			.brand.col-lg-2.col-md-2.col-4
+				.brand__wrapper
+					a(href=el.href)
+						img(src="https://mastersky.kz/image/catalog/brands/"+el.name+".png")
+						p.brand__description
+							|Ремонт #{rodName}
+							br
+							|#{el.name}
