@@ -67,3 +67,48 @@ $blue:#0744f5;
         margin-bottom: 20px;
     }
 }
+.video{
+    margin-bottom: 30px;
+    & img{
+        width: 60%;
+        transform: rotate(180deg);
+    }
+    & p{
+        font-family:'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-description{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.price{
+    margin-bottom: 30px;
+    &__heading{
+        text-align: center;
+    }
+    &__table{
+        background: #0744f5;
+        color:#fff;
+        &-cell{
+            padding: 15px;
+            padding-left: 25px;
+            @media screen and(max-width:767px){
+                border-bottom:1px solid #fff;
+            }
+        }
+        &-row:first-child{
+            border-bottom:1px solid #fff;
+            @media screen and(max-width:767px){
+                border:none;
+            }
+        }
+        &-cell:first-child{
+            border-right:1px solid #fff;
+        }
+    }
+}
