@@ -3,14 +3,14 @@
         text-align: center;
     }
     &__description {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
         align-items: center;
         margin-bottom: 60px;
     }
-    &__img {
-        margin-right: 15px;
-    }
+    // &__img {
+    //     margin-right: 15px;
+    // }
     &__delivery {
         width: 50%;
         margin: auto;
@@ -70,6 +70,9 @@
     &__row {
         display: flex;
         justify-content: space-between;
+        & > img{
+            width: 100%;
+        }
         @media screen and (max-width: 768px) {
             flex-direction: column;
             align-items: center;
@@ -96,13 +99,26 @@
             & img {
                 width: 100%;
                 max-width: 30px;
-                margin-left: 10px;
+                margin-right: 10px;
+            }
+            &__text{
+                font-family:'Montserrat', sans-serif;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            @media screen and(max-width:767px){
+                &:not(:last-child){
+                    border-bottom:1px solid #ddd;
+                    padding-bottom: 10px;
+                }
             }
         }
     }
 }
 
 .contacts {
+    margin-bottom: 40px;
     &__header {
         width: 100%;
         text-align: center;
@@ -116,9 +132,23 @@
     &__center {
         & img {
             width: 100%;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 margin-bottom: 20px;
             }
+        }
+        @media screen and (max-width: 767px) {
+            order: 0;
+        }
+    }
+    &__map{
+        @media screen and (max-width: 767px) {
+            order: 2;
+        }
+    }
+    &__description{
+        @media screen and (max-width: 767px) {
+            order: 1;
+            margin-bottom: 20px;
         }
     }
     &__heading,
@@ -166,6 +196,52 @@
 
 .popupImg__hidden {
     display: none;
+}
+
+.help-us{
+    color:#fff;
+    padding: 40px 0;
+    &-wrapper{
+        background:#141414;
+    }
+}
+
+.seo-text{
+    &__heading{
+        text-align: center;
+    }
+    & p{
+        margin-bottom: 30px;
+    }
+    & .seo-text__img{
+        & img{
+            width: 100%;
+            border-radius: 20px;
+            margin: 55px 0 35px;
+        }
+    }
+    & &__button{
+        margin-bottom: 35px;
+    }
+    &__list{
+        font-family:'Montserrat', sans-serif;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: bold;
+    }
+    &__subheading{
+        font-family:'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__important{
+        text-align: center;
+    }
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:768px) {

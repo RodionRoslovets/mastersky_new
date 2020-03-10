@@ -35,6 +35,8 @@
             color: white;
             text-transform: uppercase;
             padding: 10px;
+            text-decoration: none;
+            font-size: .8rem;
         }
         &:hover {
             background-color: lighten(#191919, 10%);
@@ -56,6 +58,10 @@
         & a {
             padding: 0;
             text-align: left;
+            font-size: .8rem;
+            &:hover{
+                text-decoration: underline;
+            }
         }
         &:hover {
             color: darken(#ffffff, 10%);
@@ -63,6 +69,9 @@
     }
     &__visible {
         display: block;
+    }
+    & .tech-name__brand a{
+        font-size: .6rem;
     }
     @media screen and (max-width:1200px) {
         width: 950px;

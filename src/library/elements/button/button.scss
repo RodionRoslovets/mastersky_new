@@ -8,6 +8,8 @@ $green:#3acb07;
     border:none;
     text-align: center;
     cursor: pointer;
+    font-family:inherit;
+    font-size: 1rem;
     &:focus{
         outline: none;
     }
@@ -35,6 +37,6 @@ $green:#3acb07;
         }
     }
     /*advanced*/
-    padding: 23px 0px;
+    padding: 15px 0px;
     color:#fff;
 }

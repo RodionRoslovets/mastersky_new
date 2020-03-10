@@ -9,9 +9,25 @@
 @import "../library/blocks/sideNav/sideNav.scss";
 @import "../library/blocks/brandsMenu/brands.scss";
 
+html{
+    font-size: 20px;
+    @media screen and(max-width:1200px) {
+        font-size: 16px;
+    }
+}
+
 body, p{
     @include borderedBox;
     margin: 0;
     padding: 0;
+    font-family:'PT Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 1.2rem;
+}
