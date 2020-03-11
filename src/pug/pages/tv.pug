@@ -6,6 +6,10 @@ include ../includes/header.pug
 	.row
 		aside.col-md-3.d-md-block.d-none
 			+sideNav(menu[2].sub[0].brands, 'Телевизоры', 'телевизоров')
+			.banner
+				p Дежурный телемастер выедет в течении 1 часа
+				a(href="tel:+77788701336")
+					+button('Позвонить', 'button_bordered button_blue button_animated')
 		main.col-md-9
 			.main-heading
 					h1 Ремонт телевизоров в Алматы
@@ -35,6 +39,11 @@ include ../includes/header.pug
 						+button('Написать в Whatsapp', 'button_bordered button_green button_animated')
 			.brands
 				+brands(menu[2].sub[0].brands, 'телевизоров')
+			.col-12.advantage-mobile.d-md-none
+					p Выезд телемастера по Алматы бесплатно
+					img(src="https://mastersky.kz/image/catalog/master2.jpg", alt="master2")
+					a(href="tel:+77788701336")
+						+button('Вызвать телемастера', 'button_bordered button_blue button_animated')
 			.masters
 				h3.masters__heading Наши мастера быстро выявят неисправность телевизора!
 				.masters__description.row
@@ -57,7 +66,8 @@ include ../includes/header.pug
 				.masters__delivery
 					img(src="https://mastersky.kz/image/catalog/truck.png", alt="")
 					h3.masters__heading Не хотите отдавать технику в сервис?
-					+button('Вызовите мастера', 'button_bordered button_blue button_animated')
+					a(href="tel:+77273440017")
+						+button('Вызовите мастера', 'button_bordered button_blue button_animated')
 				.masters__description.row
 					img.masters__img.col-md-2.col-3(src="https://mastersky.kz/image/catalog/tool-button-green.png", alt="")
 					p.masters__text.col-md-10.col-9 Квалифицированый сотрудник приедет и проведет диганостику поломки, затем Вы примете решение о целесообразности ремонта!
@@ -127,9 +137,10 @@ include ../includes/header.pug
 		.seo-text__img.col-md-6.offset-md-3
 			img(src="https://mastersky.kz/image/catalog/ibUwS-VcprI.jpg", alt="")
 		.seo-text__button.col-md-6.offset-md-3
-			+button('Вызов мастера!', 'button_bordered button_blue button_animated')
-		p.seo-text__important Привозите к нам телевизор любой марки
-		p.seo-text__important диагностика бесплатная
-		p.seo-text__important ремонт доступен всем, и с ним мы не затягиваем.
-		p.seo-text__important Даем гарантию на свою работу.
+			a(href="tel:+77273440017")
+				+button('Вызов мастера!', 'button_bordered button_blue button_animated')
+		p.seo-text__important.col-md-12 Привозите к нам телевизор любой марки
+		p.seo-text__important.col-md-12 диагностика бесплатная
+		p.seo-text__important.col-md-12 ремонт доступен всем, и с ним мы не затягиваем.
+		p.seo-text__important.col-md-12 Даем гарантию на свою работу.
 include ../includes/footer.pug

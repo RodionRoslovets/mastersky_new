@@ -26,11 +26,12 @@ html(lang='ru')
 			.row
 				.col-6.col-md-2
 					.logo
-						+logo('./assets/img/logo.png', 'logo')
+						a(href="https://mastersky.kz")
+							+logo('./assets/img/logo.png', 'logo')
 				.col-6.col-md-2
 					.phone-num
 						i.fas.fa-phone-alt
-						a(href="+77273440017") 8(727)344-00-17
+						a(href="tel:+77273440017") 8(727)344-00-17
 				.d-none.d-md-block.col-md-3
 					.address
 						p ул. Карасай Батыра 185 (между Ауэзова и Жарокова)
@@ -40,5 +41,5 @@ html(lang='ru')
 				.d-none.d-md-block.col-md-3
 					.call-button
 						+button('Заказать звонок', 'button_bordered button_blue button_animated')
-		nav.container-fluid
+		nav.container-fluid#desktop
 			+navMenu(menu)

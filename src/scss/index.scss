@@ -1,16 +1,15 @@
 .masters {
+    font-size:1rem;
     &__heading {
         text-align: center;
     }
     &__description {
-        // display: flex;
-        // justify-content: center;
         align-items: center;
         margin-bottom: 60px;
     }
-    // &__img {
-    //     margin-right: 15px;
-    // }
+    &__text{
+        line-height: 30px;
+    }
     &__delivery {
         width: 50%;
         margin: auto;
@@ -109,6 +108,7 @@
                 text-transform: uppercase;
                 font-size: 1.2rem;
                 font-weight: bold;
+                line-height: 30px;
             }
             @media screen and(max-width:767px){
                 &:not(:last-child){
@@ -252,6 +252,7 @@
         font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
+        line-height: 30px;
     }
     &__important{
         text-align: center;

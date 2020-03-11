@@ -21,13 +21,228 @@ body, p{
     margin: 0;
     padding: 0;
     font-family:'PT Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family:'Montserrat', sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 h3{
     font-size: 1.2rem;
+}
+#top{
+    display: none;
+}
+
+header.container-fluid, nav.container-fluid{
+    padding:5px 0;
+}
+
+.module-title{
+    text-align: center;font-weight: bold
+}
+
+.mob-button__call {
+    background: #55acee;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: #fff;
+        outline: none;
+    }
+    @media screen and (max-width:768px) {
+        display: block;
+    }
+}
+
+.mob-button__whatsapp {
+    @extend .mob-button__call;
+    background: #43d854;
+}
+
+.inline-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+}
+
+.popupButton {
+    &__button {
+        width: 100%;
+        height: 42px;
+        margin-bottom: 15px;
+        color: #fff;
+        background: #2B8CDB;
+        border: none;
+        border-radius: 3px;
+        &:active,
+        &:focus,
+        &:hover {
+            background: #1475C4;
+            outline: none;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+        }
+    }
+    @media screen and(max-width:767px) {
+        display: none;
+    }
+}
+
+.popupForm {
+    position: absolute;
+    width: calc(20% + 250px);
+    height: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    &__block {
+        position: fixed;
+        background: rgba(0, 0, 0, .5);
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .1s linear;
+        &__hidden {
+            display: none;
+        }
+        &__zeroOpacity {
+            opacity: 0;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        & .form__field {
+            border: 1px solid rgba(39, 39, 39, .25);
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+            transition: all .1s linear;
+            &:focus {
+                border-color: rgba(39, 39, 39, 1);
+                outline: none;
+            }
+        }
+        & .form__submit {
+            border-radius: 5px;
+            color: #fff;
+            transition: all .1s linear;
+            background: #1475C4;
+            border: 1px solid #1475C4;
+            &:focus {
+                outline: none;
+            }
+            &:active {
+                border-color: darken(#1475C4, 10%);
+                box-shadow: inset 5px 5px 10px 1px darken(#1475C4, 10%);
+            }
+        }
+    }
+    & .popupForm__heading {
+        margin: 0;
+    }
+    & .closePopup {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.popupImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 9999999;
+}
+
+.popupImg img {
+    width: 35%;
+}
+
+.popupImg__hidden {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .popupImg img {
+        width: 100%;
+    }
+}
+
+footer{
+    border: none;
+}
+
+.category_description.psbt{
+    border:none!important;
+}
+
+.advantage-mobile{
+    margin-top: 30px;
+    & p{
+        text-align: center;
+        font-family: 'Montserrat',sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #333333;
+    }
+    & img{
+        width: 100%;
+        border-radius: 20px;
+        margin: 20px 0;
+    }
+}
+
+.banner{
+    border:2px solid #2B8CDB;
+    border-radius: 10px;
+    background:transparent;
+    position:sticky;
+    top:0;
+    padding:20px 10px;
+    margin-top:10px;
+    & p{
+        font-size: 1rem;
+        line-height: 30px;
+        text-align: center;
+        margin:20px 0;
+    }
 }
