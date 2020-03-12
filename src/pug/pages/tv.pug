@@ -91,33 +91,41 @@ include ../includes/header.pug
 				h3.price__heading Диагностика внутри сервиса = 0 тенге
 				.price__table
 					.price__table-row.row
-						.price__table-cell.col-md-6 Диагностика телевизора
-						.price__table-cell.col-md-6  Диагностика материнских плат
+						.price__table-cell.col-md-6
+							a(href="tel:+77273440017" style="color:#fff") Диагностика телевизора
+						.price__table-cell.col-md-6
+							a(href="tel:+77273440017" style="color:#fff")  Диагностика материнских плат
 					.price__table-row.row
-						.price__table-cell.col-md-6  Диагностика на компонентном уровне
-						.price__table-cell.col-md-6  Диагностика проводов и разьемов
+						.price__table-cell.col-md-6 
+							a(href="tel:+77273440017" style="color:#fff") Диагностика на компонентном уровне
+						.price__table-cell.col-md-6 
+							a(href="tel:+77273440017" style="color:#fff") Диагностика проводов и разьемов
 				h3.price__heading Ремонт телевизоров от 4000 тенге
 				.price__table
 					.price__table-row.row
-						.price__table-cell.col-md-6 Ремонт телевизора
-						.price__table-cell.col-md-6 Ремонт пульта ду
+						.price__table-cell.col-md-6
+							a(href="tel:+77273440017" style="color:#fff") Ремонт телевизора
+						.price__table-cell.col-md-6
+							a(href="tel:+77273440017" style="color:#fff") Ремонт пульта ду
 					.price__table-row.row
-						.price__table-cell.col-md-6 Ремонт на компонентном уровне
-						.price__table-cell.col-md-6 Ремонт матрицы
+						.price__table-cell.col-md-6
+							a(href="tel:+77273440017" style="color:#fff") Ремонт на компонентном уровне
+						.price__table-cell.col-md-6
+							a(href="tel:+77273440017" style="color:#fff") Ремонт матрицы
 			.video
 				.row
-					.col-md-6
+					.col-md-6(style="min-height:230px")
 						iframe( width="100%" height="100%" src="https://www.youtube.com/embed/ot-BidP5cn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-					.video-description.col-md-6.d-md-flex.d-none
+					.video-description.col-md-6.d-md-flex.d-none(style="justify-content:center")
 						img(src="https://mastersky.kz/image/catalog/57116.png", alt="")
-						p Больше информации в видео
+						p(style="line-height:30px") Больше информации в видео
 			.contacts
 				.contacts__header
 					h3.contacts__heading Мы находимся по адресу
 					p.contacts__description ул. Карасай Батыра 185 (между Ауэзова и Жарокова)
 				.contacts__inner.row
 					.contacts__center.contacts_inner-page.col-lg-6.col-md-6.col-12
-						img(src="https://mastersky.kz/image/catalog/Center.jpg", alt="")
+						img(src="https://mastersky.kz/image/catalog/C13_6269.jpg", alt="")
 					.contacts__map.contacts_inner-page.col-lg-6.col-md-6.col-12
 						iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A4090c4a7507d38be26fcc8b63c752f46db44fe10d420324f3f26be62925dfa55&amp;source=constructor" width="100%" height="100%" frameborder="0")
 					p.contacts__description.col-md-12 с 9:00 до 19:00, без перерывов и выходных
@@ -127,7 +135,7 @@ include ../includes/header.pug
 			.help-us__text.col-md-7
 				p ПОМОГИТЕ НАМ УЛУЧШИТЬ СЕРВИС!НАПИШИТЕ, ЧТО ЕЩЕ МЫ МОЖЕМ СДЕЛАТЬ ДЛЯ ВАС!
 			.help-s__button.col-md-4.offset-md-1
-				+button('Написать директору лично', 'button_bordered button_blue button_animated')
+				+button('Написать директору лично', 'button_bordered button_blue button_animated popupButton')
 .container
 	.seo-text
 		p Современные телевизоры являются сложной бытовой техникой. Ушло время, когда можно было, обладая минимальными познаниями, осуществить самостоятельно ремонт. Теперь технику необходимо везти в специализированный сервисный центр, чтобы мастер смог устранить неисправность.

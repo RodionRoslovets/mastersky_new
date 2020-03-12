@@ -32,7 +32,7 @@
         </div>
         <div class="d-none d-md-block col-md-3">
           <div class="call-button">
-            <button class="button button_bordered button_blue button_animated">Заказать звонок</button>
+            <button class="button button_bordered button_blue button_animated popupButton">Заказать звонок</button>
           </div>
         </div>
       </div>
@@ -494,33 +494,33 @@
         <h3 class="price__heading">Диагностика внутри сервиса = 0 тенге</h3>
         <div class="price__table">
           <div class="price__table-row row">
-            <div class="price__table-cell col-md-6">Диагностика телевизора</div>
-            <div class="price__table-cell col-md-6"> Диагностика материнских плат</div>
+            <div class="price__table-cell col-md-6"><a href="tel:+77273440017" style="color:#fff">Диагностика телевизора</a></div>
+            <div class="price__table-cell col-md-6"><a href="tel:+77273440017" style="color:#fff"> Диагностика материнских плат</a></div>
           </div>
           <div class="price__table-row row">
-            <div class="price__table-cell col-md-6"> Диагностика на компонентном уровне</div>
-            <div class="price__table-cell col-md-6"> Диагностика проводов и разьемов</div>
+            <div class="price__table-cell col-md-6"> <a href="tel:+77273440017" style="color:#fff">Диагностика на компонентном уровне</a></div>
+            <div class="price__table-cell col-md-6"> <a href="tel:+77273440017" style="color:#fff">Диагностика проводов и разьемов</a></div>
           </div>
         </div>
         <h3 class="price__heading">Ремонт телевизоров от 4000 тенге</h3>
         <div class="price__table">
           <div class="price__table-row row">
-            <div class="price__table-cell col-md-6">Ремонт телевизора</div>
-            <div class="price__table-cell col-md-6">Ремонт пульта ду</div>
+            <div class="price__table-cell col-md-6"><a href="tel:+77273440017" style="color:#fff">Ремонт телевизора</a></div>
+            <div class="price__table-cell col-md-6"><a href="tel:+77273440017" style="color:#fff">Ремонт пульта ду</a></div>
           </div>
           <div class="price__table-row row">
-            <div class="price__table-cell col-md-6">Ремонт на компонентном уровне</div>
-            <div class="price__table-cell col-md-6">Ремонт матрицы</div>
+            <div class="price__table-cell col-md-6"><a href="tel:+77273440017" style="color:#fff">Ремонт на компонентном уровне</a></div>
+            <div class="price__table-cell col-md-6"><a href="tel:+77273440017" style="color:#fff">Ремонт матрицы</a></div>
           </div>
         </div>
       </div>
       <div class="video">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" style="min-height:230px">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ot-BidP5cn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="video-description col-md-6 d-md-flex d-none"><img src="https://mastersky.kz/image/catalog/57116.png" alt="">
-            <p>Больше информации в видео</p>
+          <div class="video-description col-md-6 d-md-flex d-none" style="justify-content:center"><img src="https://mastersky.kz/image/catalog/57116.png" alt="">
+            <p style="line-height:30px">Больше информации в видео</p>
           </div>
         </div>
       </div>
@@ -530,7 +530,7 @@
           <p class="contacts__description">ул. Карасай Батыра 185 (между Ауэзова и Жарокова)</p>
         </div>
         <div class="contacts__inner row">
-          <div class="contacts__center contacts_inner-page col-lg-6 col-md-6 col-12"><img src="https://mastersky.kz/image/catalog/Center.jpg" alt=""></div>
+          <div class="contacts__center contacts_inner-page col-lg-6 col-md-6 col-12"><img src="https://mastersky.kz/image/catalog/C13_6269.jpg" alt=""></div>
           <div class="contacts__map contacts_inner-page col-lg-6 col-md-6 col-12">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4090c4a7507d38be26fcc8b63c752f46db44fe10d420324f3f26be62925dfa55&amp;amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
           </div>
@@ -547,7 +547,7 @@
         <p>ПОМОГИТЕ НАМ УЛУЧШИТЬ СЕРВИС!НАПИШИТЕ, ЧТО ЕЩЕ МЫ МОЖЕМ СДЕЛАТЬ ДЛЯ ВАС!</p>
       </div>
       <div class="help-s__button col-md-4 offset-md-1">
-        <button class="button button_bordered button_blue button_animated">Написать директору лично</button>
+        <button class="button button_bordered button_blue button_animated popupButton">Написать директору лично</button>
       </div>
     </div>
   </div>
@@ -568,3 +568,17 @@
   </div>
 </div>
 <p>здесь футер</p>
+<div class="popupForm__block popupForm__block__hidden popupForm__block__zeroOpacity directorForm">
+  <div class="popupForm">
+    <div class="closePopup">×</div>
+    <h3 class="popupForm__heading">Задайте вопрос директору</h3>
+    <form class="popupForm__form" action="#">
+      <input class="form__field" type="text" name="name" placeholder="Ваше имя">
+      <input class="form__field" type="text" name="email" placeholder="Ваш Email">
+      <input class="form__field" type="text" name="phone" placeholder="Ваш телефон">
+      <textarea class="form__field" type="text" name="question" placeholder="Ваш вопрос"></textarea>
+      <input class="form__submit" type="submit">
+    </form>
+    <div class="statusField"></div>
+  </div>
+</div>

@@ -32,7 +32,7 @@
         </div>
         <div class="d-none d-md-block col-md-3">
           <div class="call-button">
-            <button class="button button_bordered button_blue button_animated">Заказать звонок</button>
+            <button class="button button_bordered button_blue button_animated popupButton">Заказать звонок</button>
           </div>
         </div>
       </div>
@@ -319,8 +319,8 @@
   </div>
   <h3 class="masters__heading">Доставка техники = 0 тенге</h3>
   <div class="masters__delivery"><img src="https://mastersky.kz/image/catalog/truck.png" alt="">
-    <h3 class="masters__heading">Не хотите отдавать технику в сервис?</h3>
-    <button class="button button_bordered button_blue button_animated">Вызовите мастера</button>
+    <h3 class="masters__heading">Не хотите отдавать технику в сервис?</h3><a href="tel:+77273440017">
+      <button class="button button_bordered button_blue button_animated">Вызовите мастера</button></a>
   </div>
   <div class="masters__description row"><img class="masters__img col-md-2 col-3" src="https://mastersky.kz/image/catalog/tool-button-green.png" alt="">
     <p class="masters__text col-md-10 col-9">Квалифицированый сотрудник приедет и проведет диганостику поломки, затем Вы примете решение о целесообразности ремонта!</p>
@@ -360,7 +360,7 @@
     <p class="contacts__description">ул. Карасай Батыра 185 (между Ауэзова и Жарокова)</p>
   </div>
   <div class="contacts__inner row">
-    <div class="contacts__center col-lg-6 col-md-6 col-12"><img src="https://mastersky.kz/image/catalog/Center.jpg" alt=""></div>
+    <div class="contacts__center col-lg-6 col-md-6 col-12"><img src="https://mastersky.kz/image/catalog/C13_6269.jpg" alt=""></div>
     <div class="contacts__map col-lg-6 col-md-6 col-12">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4090c4a7507d38be26fcc8b63c752f46db44fe10d420324f3f26be62925dfa55&amp;amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
     </div>
@@ -374,7 +374,7 @@
         <p>ПОМОГИТЕ НАМ УЛУЧШИТЬ СЕРВИС!НАПИШИТЕ, ЧТО ЕЩЕ МЫ МОЖЕМ СДЕЛАТЬ ДЛЯ ВАС!</p>
       </div>
       <div class="help-s__button col-md-4 offset-md-1">
-        <button class="button button_bordered button_blue button_animated">Написать директору лично</button>
+        <button class="button button_bordered button_blue button_animated popupButton">Написать директору лично</button>
       </div>
     </div>
   </div>
@@ -397,9 +397,8 @@
     <li>Если нужно, мастер выедет к вам, проведет диагностику и ремонт.</li>
   </ol>
   <div class="seo-text__img col-md-6 offset-md-3"><img src="https://mastersky.kz/image/catalog/DSCF6190.jpg" alt=""></div>
-  <div class="seo-text__button col-md-6 offset-md-3">
-    <button class="button button_bordered button_blue button_animated">Вызов мастера!</button>
-  </div>
+  <div class="seo-text__button col-md-6 offset-md-3"></div><a href="tel:+77273440017">
+    <button class="button button_bordered button_blue button_animated">Вызов мастера!</button></a>
   <p class="seo-text__subheading">А какая цена на услуги по ремонту в нашем сервисном центре?</p>
   <p>Она определяется степенью повреждения бытовой техники и стоимостью запасных частей. Но клиенты, обращающиеся к нам, отмечают, что в нашем сервисном центре самые оптимальные расценки!</p>
   <p class="seo-text__important">Сломалась бытовая техника?</p>
@@ -408,3 +407,17 @@
   <p class="seo-text__important">Сервисный центр Алматы Iceberg –возвращаем к жизни любую технику</p>
 </div>
 <p>здесь футер</p>
+<div class="popupForm__block popupForm__block__hidden popupForm__block__zeroOpacity directorForm">
+  <div class="popupForm">
+    <div class="closePopup">×</div>
+    <h3 class="popupForm__heading">Задайте вопрос директору</h3>
+    <form class="popupForm__form" action="#">
+      <input class="form__field" type="text" name="name" placeholder="Ваше имя">
+      <input class="form__field" type="text" name="email" placeholder="Ваш Email">
+      <input class="form__field" type="text" name="phone" placeholder="Ваш телефон">
+      <textarea class="form__field" type="text" name="question" placeholder="Ваш вопрос"></textarea>
+      <input class="form__submit" type="submit">
+    </form>
+    <div class="statusField"></div>
+  </div>
+</div>
